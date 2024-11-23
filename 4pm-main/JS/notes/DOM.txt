@@ -1,0 +1,20 @@
+document is an object created by browser which contains complete copy of your HTML
+it can do
+1. selection:
+console.log(document.getElementsByTagName('h1'))
+console.log(document.getElementsByClassName('heading'))
+console.log(document.getElementById('head'))
+console.log(document.querySelector('h1'))
+console.log(document.querySelectorAll("h1"))
+
+2. updation/manipulation:
+To manipulate what it contains, we can use
+textContent: used to get/change what text inside an element
+innerText  : used to get/change what text inside an element and it also respects CSS
+innerHTML  : used to change html code
+style  : used to change CSS
+classList : you can add/remove/toggle class names
+
+3. creation:
+we can create HTML elements in Javascript using createElement function of document object
+you add one element inside another element using append or appendChild. appendChild is used for single element and append is used for multiple elemenets
